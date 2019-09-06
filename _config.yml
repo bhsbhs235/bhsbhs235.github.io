@@ -1,8 +1,8 @@
-title:              효성이 Blog
+title:              HyoSeong's Blog
 email:              bhsbhs235@naver.com
 description:        software engineer
 author:             Start Bootstrap
-#baseurl:            "/startbootstrap-clean-blog-jekyll"
+baseurl:            "/startbootstrap-clean-blog-jekyll"
 url:                "https://bhsbhs235.github.io/"
 
 # Social Profiles
