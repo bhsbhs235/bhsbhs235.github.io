@@ -118,7 +118,8 @@ class Solution {
 	<li>(나)노드의 Right서브트리(2)를 찾아간다</li>
 	<li>2의 Left서브트리를 찾아가고 null이므로 return, Root차례에서 i가 증가, Right서브트리를 찾아가고 null 이므로 return</li>
 	<li>(가)의 Left서브트리인 (나)의 Left,Root,Right 순서가 끝났으므로 (가)의 Root(3)을 방문하고 i가 증가한다</li>
-	<li>(가)의 Right서브트리(라)를 찾아간다 -> (라)의 Left서브트리를 찾아가고 null이므로 return, Root(4)를 방문하고 i가 증가, Right서브트리를 찾아가고 null이므로 return</li>
+	<li>(가)의 Right서브트리(라)를 찾아간다</li>
+	<li>(라)의 Left서브트리를 찾아가고 null이므로 return, Root(4)를 방문하고 i가 증가, Right서브트리를 찾아가고 null이므로 return</li>
 </ol>
 <p>이진 검색 트리 특징상 in-order순회로 방문할 때 저절로 오름차순으로 방문(Root)합니다. 따라서 각각 i가 증가할 때, i가 증가하고 난 후 k와 비교해서 같으면 방문한 노드(Root)의 값(root.val)을 반환하기 때문에, k번째 작은수가 됩니다.</p>
 <strong>출처:</strong>
