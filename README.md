@@ -10,7 +10,7 @@
 
 감사합니다.
 
-## 사이드프로젝트
+## 프로젝트 
 
 - [Sleeptime/pattern measurement(with.CCTV in house)](https://github.com/isme2n/react-redux-material-meteor) - 수면시간/패턴 측정
 
