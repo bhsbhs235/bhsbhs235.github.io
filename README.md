@@ -12,6 +12,6 @@
 
 ## 사이드프로젝트
 
-- [수면시간/패턴 측정](https://bhsbhs235.github.io/2019/10/09/iot_cctv_sleeptech_pi.html)
+- [Sleeptime/pattern measurement(with.CCTV in house)](https://github.com/isme2n/react-redux-material-meteor) - 수면시간/패턴 측정
 
-- [도로 불편사항 신고 앱](https://bhsbhs235.github.io/2019/09/27/roadcomplaintreportapp.html)
+- [Road Complaint Report App](http://48wedding.com) - 도로 불편사항 신고 앱
