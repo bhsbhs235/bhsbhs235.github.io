@@ -4,10 +4,10 @@ description:       Software Engineer
 author:             Start Bootstrap
 #baseurl:            "/startbootstrap-clean-blog-jekyll"
 url:                "https://bhsbhs235.github.io"
- 
+category_dir: category/
 
 
-# Social Profiles
+#Social Profiles
 #twitter_username:   SBootstrap
 github_username:    bhsbhs235
 #facebook_username:  StartBootstrap
