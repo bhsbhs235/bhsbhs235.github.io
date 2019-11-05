@@ -37,11 +37,14 @@ categories: Projects
 비콘을 이용하여 운전 중인 운전자들도 버튼클릭 한 번으로 손쉽게 사진을 촬영하고 신고를 할 수 있는 서비스를 제공한다.
 
 <h3 class="section-heading2">시스템 구성</h3>
+
 <img class="img-fluid" src="/img/posts/projects/senierproject3.PNG">
 <div style="text-align: center;">
 <img class="img-fluid" src="/img/posts/projects/senierproject4.PNG" align="center">
 </div>
+
 <h4 class="section-heading2">기능</h4>
+
 <ol>
 	<li>자동 신고 기능</li>
 		<p style="margin: 0;">버튼형 비콘을 누르면 라즈베리파이가 비콘 데이터를 받아 편집된 동영상, 사진을 스마트폰으로 전달하고 구글맵 데이터와 신고내용을 통합해 MMS창으로 띄운다 
