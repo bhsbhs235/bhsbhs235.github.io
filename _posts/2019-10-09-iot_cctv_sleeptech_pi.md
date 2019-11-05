@@ -17,13 +17,16 @@ categories: Projects
 스마트폰과 라즈베리파이를 블루투스를 통해 연동하여 라즈베리파이에 기록된 데이터를 기반으로 수면패턴을 
 사용자에게 출력해주는 수면 보조 기구.
 </p>
+
 <div style="text-align: center;">
 <img class="img-fluid" src="/img/posts/projects/sleeptight_RaspberryPi.PNG" align="center">
 <span class="caption text-muted">
 프로젝트에 사용된 라즈베리파이
 </span>
 </div>
+
 <h2 class="section-heading2">개발배경 및 필요성</h2>
+
 <ul>
 	<li>개발배경</li>
 	<p style="margin: 0;">OECD 통계에 따르면 한국인의 하루 평균 수면 시간은 7시간41분으로 회원국 중 
@@ -40,8 +43,11 @@ categories: Projects
 </ul>
 
 <h3 class="section-heading2">시스템 구성</h3>
+
 <img class="img-fluid" src="/img/posts/projects/sleeptight2.PNG" align="center">
+
 <h4 class="section-heading2">S/W 기능</h4>
+
 <ol>
 	<li>수면패턴 측정</li>
 		<p style="margin: 0;">자는 모습을 적외선 카메라로 촬영하고 영상처리를 이용하여 깊은 잠과 얕은 잠을 판별하여 수면패턴을 기록한다.</p>
@@ -73,7 +79,9 @@ categories: Projects
 		</div>
 		<br>	
 </ol>
+
 <h4 class="section-heading2">H/W 기능</h4>
+
 <ol>
 	<li>조도 센서</li>
 		<p style="margin: 0;">조도센서를 통해 빛의 밝기를 알 수 있다.</p>
@@ -97,10 +105,12 @@ categories: Projects
 		</div>
 		<br>
 </ol>
-<h4 class="section-heading">참고자료</h4>
-<ul>
-	<li><p><a href="https://github.com/bhsbhs235/sleeptight">소스코드</a></p></li>
-</ul>
+
+# 참고자료
+
+- [소스 코드](https://github.com/bhsbhs235/sleeptight)
+
+
 
 
 
