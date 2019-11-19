@@ -9,4 +9,8 @@ env:
 sudo: false
 cache: bundler
 notifications:
-  email: false
+  email: 
+    recipients:
+      - bhsbhs235@naver.com
+    on_success: never 
+    on_failure: always 
