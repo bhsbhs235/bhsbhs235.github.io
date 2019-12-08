@@ -5,8 +5,6 @@ description: 저에 대해서 소개하겠습니다.
 background: '/img/bg-about2.jpg'
 ---
 
-[![Build Status](https://travis-ci.org/bhsbhs235/bhsbhs235.github.io.svg?branch=master)](https://travis-ci.org/bhsbhs235/bhsbhs235.github.io)
-
 <h1 class="section-heading2" >소개</h1>
 안녕하세요, 효성's Blog에 와주셔서 감사합니다.
 
