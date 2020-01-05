@@ -12,7 +12,7 @@ categories: Jenkins
 
 AWS EC2에서 jenkins서버 구동시 다음과 같은 error를 보실수 있습니다.
 
-```console
+```Console
 OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000eaaa0000, 178978816, 0) failed; error='Cannot allocate memory' (errno=12)
 #
 # There is insufficient memory for the Java Runtime Environment to continue.
@@ -55,7 +55,7 @@ EC2 인스턴스는 64bit ( $ getconf LONG_BIT ) JDK버전도 64bit이므로 아
 
 SWAP 공간이 없는 것을 확인하고
 
-```console
+```Console
 $ free -h
 ```
 
@@ -67,28 +67,30 @@ SWAP 파일을 생성합니다.
 
 크기는 1.5 ~ 2배정도로 설정하는 것을 권장합니다.
 
-```console
+```Console
 $ touch /var/spool/swap/swapfile 
 $ dd if=/dev/zero of=/var/spool/swap/swapfile count=2048000 bs=1024
 ```
 
 시스템에서 접근 가능하도록 600 권한을 줍니다. 파일 소유권은 root:root(chown root:root)
 
-```console
+```Shell
 $ chmod 600 /var/spool/swap/swapfile
 ```
 
 파일 포맷을 SWAP으로 변환 후 SWAP file등록
 
-```console
+```Console
 $ mkswap /var/spool/swap/swapfile
 $ swapon /var/spool/swap/swapfile
 ```
 
 파일시스템테이블(/etc/fstab)에 등록
 
-```console
+```Console
 $ vi /etc/fstab
+```
+```Vim
 #
 # /etc/fstab
 # Created by anaconda on Tue Jun 18 17:03:37 2019
@@ -106,7 +108,7 @@ $ vi /etc/fstab
 
 SWAP파일이 정상적으로 등록되었는지 확인합니다.
 
-```console
+```Console
 $ free -h
 ```
 

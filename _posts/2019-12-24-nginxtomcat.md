@@ -12,12 +12,12 @@ categories: Nginx
 
 nginx.conf 수정
 
-```shell
+```Shell
 $ vi /etc/nginx/nginx.conf
 ```
 
 
-```Bash
+```Nginx
 ##추가
 upstream tomcat {
         ip_hash;
@@ -45,13 +45,13 @@ server {
 
 nginx 서비스를 실행한 후 다음과 같은 오류가 뜬다면
 
-```console
+```Shell
 2016/07/01 09:14:00 [crit] 1938#0: *4 connect() to 127.0.0.1:8080 failed (13: Permission denied) while connecting to upstream, ….
 ```
 
 nginx가 proxy로 접근시 접근권한을 풀어주는 명령어 실행
 
-```shell
+```Shell
 $ setsebool -P httpd_can_network_connect 1
 ```
 

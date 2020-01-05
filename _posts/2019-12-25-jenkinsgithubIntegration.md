@@ -32,7 +32,9 @@ Jenkins 관리 > Global Tool Configuration
 
 그 다음 Gradle설치 폴더 경로도 추가해줍니다.
 
-(RHEL8버전 Gradle설치)
+(보통 프로젝트내의 gradle을 사용하기 때문에 굳이 할 필요는 없습니다.)
+
+RHEL8버전 Gradle설치
 ```console
 $ wget https://services.gradle.org/distributions/gradle-5.2.1-bin.zip
 $ mkdir /opt/gradle
@@ -117,6 +119,8 @@ Build > Invoke Gradle script > Use Gradle Wrapper 체크 > Make gradlew executab
 <div>
 	<img class="img-fluid" src="/img/posts/jenkins/jenkins20.JPG">	
 </div>
+
+**※참고 :** Invoke Gradle은 서버에 설치되어있는 Gradle을 사용할때 체크합니다.
 
 이번엔 해당 github 레포지토리의 settings로 이동합니다.
 

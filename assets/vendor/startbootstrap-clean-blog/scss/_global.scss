@@ -22,7 +22,13 @@ pre{
     border-radius:3px;
 }
 
-h1,
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 60px;
+    @include sans-serif-font;
+}
+
 h2,
 h3,
 h4,
