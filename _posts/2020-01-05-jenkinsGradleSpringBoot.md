@@ -106,7 +106,7 @@ war{ enabled = true }시 war Task가 진행됩니다.
 	<img class="img-fluid" src="/img/posts/jenkins/jenkins28.JPG">	
 </div>
 
-[관련 링크](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/html/)
+[Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/html/)
 
 #### Springboot 배포, 실행
 

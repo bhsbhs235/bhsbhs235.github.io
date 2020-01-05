@@ -54,10 +54,12 @@ spring.mvc.static-path-pattern=/resources/**
 <img src="resources/static/img/welcome.jpg"> ( X )
 ```
 
-[해당 문서 링크](https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-developing-web-applications)입니다.
-
 <div>
 	<img class="img-fluid" src="/img/posts/springboot/springboot1.jpg">	
 </div>
 
-[application.properties 설정 관련 링크](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html)
+**관련 링크 :**
+
+[Developing Web Applications](https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-developing-web-applications)
+
+[Common application.properties](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html)

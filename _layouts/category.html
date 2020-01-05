@@ -71,14 +71,14 @@ layout: default
                         <li>
                           <a href="{{ root_url }}/{{site.category_dir}}{{category | first | slugify }}"
                             class="bold">
-                            <span>{{ category | first }}({{ category | last | size }})</span>
+                            <span class="category">{{ category | first }}({{ category | last | size }})</span>
                           </a>
                         </li>
                     {% endfor %}
                     <li>
                         <a href="{{ root_url }}/{{site.category_dir}}{{ x | first | slugify }}"
                             class="bold">
-                            <span>{{ x | first }}({{ x | last | size }})</span>
+                            <span class="category">{{ x | first }}({{ x | last | size }})</span>
                         </a>
                     </li>
                 </ul>
