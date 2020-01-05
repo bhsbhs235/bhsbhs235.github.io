@@ -7,8 +7,7 @@ background: '/img/posts/bg-img/28.jpg'
 comments: true
 categories: Jenkins Springboot
 ---
-
-## Jenkins 프로젝트 구성
+#### Jenkins 프로젝트 구성
 
 Jenkins 해당 프로젝트 > 구성 > Build > Use Gradle Wrapper 체크 > Make gradlew executable 체크 >
 Wrapper location에 ${workspace} > Tasks에 claen build
@@ -29,7 +28,7 @@ workspace는 현제 프로젝트의 workspace경로입니다.
 
 Task의 clean은 workspace/build 레포지터리를 삭제하는 Task이며, build는 말그대로 build하는 Task입니다.
 
-## build.gradle
+#### build.gradle
 
 build.gradle에서 plugin 'java'추가시 자동적으로 bootJar Task를 실행합니다
 
@@ -95,7 +94,7 @@ jar 설정만 한다면 bootJar Task를 실행 "artifactID이름.jar"가 생성�
 
 jar Task 실행 "springproject2-0.0.1-SNAPSHOT"가 생성됩니다.
 
-## War
+#### War
 
 war도 마찬가지로 plugin 'war'추가시 bootWar Task가 자동 실행되며, 
 
@@ -109,7 +108,7 @@ war{ enabled = true }시 war Task가 진행됩니다.
 
 [관련 링크](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/html/)
 
-## Springboot 배포, 실행
+#### Springboot 배포, 실행
 
 Springboot는 jsp를 지원하지 않기 때문에 war로 배포해야 하며,
 

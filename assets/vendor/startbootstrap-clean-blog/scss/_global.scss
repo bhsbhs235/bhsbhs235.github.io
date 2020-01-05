@@ -1,8 +1,9 @@
 // Global styling for this template
 body {
-  font-size: 20px;
-  color: $gray-900;
-  @include serif-font;
+    font-size: 20px;
+    color: #02303A;
+    #color: $gray-900;
+    @include serif-font;
 }
 
 p {
@@ -22,29 +23,47 @@ pre{
     border-radius:3px;
 }
 
-h1 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-top: 60px;
-    @include sans-serif-font;
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    @include serif-font;
 }
 
+h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: -1em;
+    padding-top: 60px;
+    @include serif-font;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    @include serif-font;
+}
+
+h1,
 h2,
-h3,
-h4,
-h5,
 h6 {
   font-weight: 800;
   @include sans-serif-font;
 }
 
 a {
-  color: $gray-900;
-  @include transition-all;
-  &:focus,
-  &:hover {
-    color: $primary;
-  }
+    color: #1DA2BD;
+    #color: $gray-900;
+    @include transition-all;
+
+    &:focus,
+    &:hover {
+        color: $primary;
+    }
+
+    span {
+            color: $gray-900;
+    }
 }
 
 blockquote {

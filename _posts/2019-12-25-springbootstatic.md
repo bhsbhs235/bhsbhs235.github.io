@@ -60,4 +60,4 @@ spring.mvc.static-path-pattern=/resources/**
 	<img class="img-fluid" src="/img/posts/springboot/springboot1.jpg">	
 </div>
 
-[application.properties 설정관련링크](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html)
+[application.properties 설정 관련 링크](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html)
