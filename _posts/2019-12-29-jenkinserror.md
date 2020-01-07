@@ -8,7 +8,7 @@ comments: true
 categories: Jenkins
 ---
 
-<h1 class="section-heading2" >Jenkins 빌드 에러</h1>
+<h1 class="section-heading2">Jenkins 빌드 에러</h1>
 
 AWS EC2에서 jenkins서버 구동시 다음과 같은 error를 보실수 있습니다.
 
@@ -29,7 +29,7 @@ OpenJDK 64-Bit Server VM warning: INFO: os::commit_memory(0x00000000eaaa0000, 17
 
 - 프로세스 크기 제한에 도달 
 
-**해결방법**
+**해결방법 :**
 
 - 시스템의 메모리 로드 줄이기.
 
@@ -115,5 +115,6 @@ $ free -h
 <div>
 	<img class="img-fluid" src="/img/posts/jenkins/jenkins24.JPG">	
 </div>
+
 
 성공적으로 등록이 되었으며 빌드시 error없이 진행이 됩니다.

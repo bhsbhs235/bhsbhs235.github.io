@@ -7,11 +7,6 @@ background: '/img/posts/bg-img/21.jpg'
 comments: true
 categories: Projects
 ---
-<style>
-	li {
-		font-weight: bold;
-	}
-</style>
 <h1 class="section-heading2" >작품개요</h1>
 차량용 스마트 불편신고 어플리케이션은 라즈베리파이와 카메라 모듈, 버튼형 블루투스, 비콘 모바일 기기를 이용하여 동작한다 버튼형 블루투스 비콘은 간단한 버튼이 부착된 비콘 기기이다 버튼을 클릭하면 상황에 맞는 비콘 데이터가 주변의 블루투스 장치로 전달된다 이 데이터를 받은 라즈베리파이는 비콘 데이터를 인식하여 카메라 모듈을 실행시켜 사진 또는 동영상을 촬영한다 이와 같은 방법으로 촬영된 사진 또는 영상 데이터는 사용자의 모바일 기기로 전달되고 개발하는 스마트 불편 신고 어플리케이션을 통해 신고를 진행한다 차량용 스마트 불편신고 어플리케이션이 동작하는 과정은 다음 그림과 같다.
 
@@ -84,7 +79,7 @@ categories: Projects
 		<br>
 </ol>
 
-# 참고자료
+<h4 class="section-heading2">참고자료</h4>
 
 - [소스 코드](https://github.com/bhsbhs235/RoadComplaintReportApp)
 

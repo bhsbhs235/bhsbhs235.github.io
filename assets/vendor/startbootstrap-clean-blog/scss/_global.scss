@@ -2,13 +2,17 @@
 body {
     font-size: 20px;
     color: #02303A;
-    #color: $gray-900;
     @include serif-font;
 }
 
 p {
-  line-height: 1.5;
-  margin: 20px 0;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+
+    a {
+        color: #1DA2BD;
+        text-decoration: underline;
+    }
 }
 
 pre{
@@ -20,58 +24,80 @@ pre{
     border-radius:3px;
 }
 
-h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    @include serif-font;
-}
 
 h4 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: -1em;
-    padding-top: 60px;
+    font-weight:bold;
+    font-size: 2rem;
     @include serif-font;
 }
 
 h5 {
-    font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 0.25rem;
+    margin-top: -1em;
+    padding-top: 60px;
+    font-size: 1.75rem;
     @include serif-font;
 }
 
+h6 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    margin-top: 0;
+    text-align: left;
+    @include sans-serif-font;
+}
 h1,
 h2,
-h6 {
+h3{
   font-weight: 800;
   @include sans-serif-font;
 }
 
 a {
-    color: #1DA2BD;
-    #color: $gray-900;
+    color: $gray-900;
     @include transition-all;
 
     &:focus,
     &:hover {
         color: $primary;
     }
-
-    span {
-        i {
-            color: $gray-900;
-        }
-    }
-
-    .category {
-        color: $gray-900;
-    }
 }
 
+
 blockquote {
-  font-style: italic;
-  color: $gray-600;
+    height: 45px;
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee;
+    border-left-color: #1591d9;
+}
+
+
+ul {
+    margin-left: 1.5em;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1.25em;
+    list-style-position: outside;
+    padding-inline-start: 0;
+}
+
+
+ol {
+    margin-left: 1.5em;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1.25em;
+    list-style-position: outside;
+    padding-inline-start: 0;
+    li{
+        font-weight: bold;
+    }
+    p{
+        margin: 0;
+    }
 }
 
 .section-heading {
@@ -81,7 +107,7 @@ blockquote {
 }
 
 .section-heading2 {
-    font-size: 36px;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-top: 60px;
     border-bottom-width: 1px;

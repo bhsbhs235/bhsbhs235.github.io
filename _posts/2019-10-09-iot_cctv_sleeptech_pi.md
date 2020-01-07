@@ -106,10 +106,9 @@ categories: Projects
 		<br>
 </ol>
 
-# 참고자료
+<h1 class="section-heading2">참고자료</h1>
 
 - [소스 코드](https://github.com/bhsbhs235/sleeptight)
-
 
 
 
