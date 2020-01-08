@@ -68,12 +68,14 @@ a {
 
 
 blockquote {
-    height: 45px;
+    p{
+        margin: 0;
+    }
     padding: 10px 20px;
     margin: 0 0 20px;
     font-size: 17.5px;
     border-left: 5px solid #eee;
-    border-left-color: #1591d9;
+    border-left-color: #1488C6;
 }
 
 

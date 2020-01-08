@@ -26,17 +26,21 @@ Wrapper location에 ${workspace} > Tasks에 claen build
 	<img class="img-fluid" src="/img/posts/jenkins/jenkins25.jpg">	
 </div>
 
+Invoke Gradle은 서버 내부에 설치되어 있는 Gradle을 실행하는 것입니다.
+
 Use Gradle Wrapper은 프로젝트 내의 gradle Wrapper을 이용하는 것입니다.
 
-Make gradlew executable을 체크해줘야 권한 에러없이 잘 진행됩니다.
+(저희는 프로젝트내의 gradle설정을 사용할 예정입니다.)
 
-Invoke Gradle은 서버 내부에 설치되어 있는 Gradle을 실행하는 것입니다.
+Make gradlew executable을 체크해줘야 권한 에러없이 잘 진행됩니다.
 
 Wrapper location은 Wrapper 경로로 jenkins gradle plugin이 지원하는 변수 ${workspace}로 설정합니다.
 
 workspace는 현제 프로젝트의 workspace경로입니다.
 
 Task의 clean은 workspace/build 레포지터리를 삭제하는 Task이며, build는 말그대로 build하는 Task입니다.
+
+build Task가 성공적으로 수행되면 build 레포지터리가 생성되고 build 설정에 따른 여러가지 파일이 생성됩니다
 
 #### build.gradle
 
@@ -73,7 +77,9 @@ dependencies {
 }
 ```
 
-build.gradle에서 plugin 'java'추가시 자동적으로 bootJar Task를 실행합니다
+> **Tip :** plugin 'war'시 아래의 bootJar, jar Task 말고 bootWar, war Task가 진행되지만 이해를 돕기위해 아래와 같은 설명을 추가했습니다. 그냥 쭈욱 읽어주시면 이해가 될 것으로 예상됩니다.
+
+build.gradle에서 plugin 'java' 추가시 자동적으로 bootJar Task를 실행합니다
 
 ```Groovy
 bootJar{
