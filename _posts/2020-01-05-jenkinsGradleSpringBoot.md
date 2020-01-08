@@ -77,7 +77,7 @@ dependencies {
 }
 ```
 
-> **Tip :** plugin 'war'시 아래의 bootJar, jar Task 말고 bootWar, war Task가 진행되지만 이해를 돕기위해 아래와 같은 설명을 추가했습니다. 그냥 쭈욱 읽어주시면 이해가 될 것으로 예상됩니다.
+> **Note :** plugin 'war'시 아래의 bootJar, jar Task 말고 bootWar, war Task가 진행되지만 이해를 돕기위해 아래와 같은 설명을 추가했습니다. 그냥 쭈욱 읽어주시면 이해가 될 것으로 예상됩니다.
 
 build.gradle에서 plugin 'java' 추가시 자동적으로 bootJar Task를 실행합니다
 
@@ -143,6 +143,14 @@ jar 설정만 한다면 bootJar Task를 실행 "artifactID이름.jar"가 생성�
 
 jar Task 실행 "springproject2-0.0.1-SNAPSHOT.jar"가 생성됩니다.
 
+war도 마찬가지로 plugin 'war'추가시 bootWar Task가 자동 실행되며, 
+
+war{ enabled = true }시 war Task가 진행됩니다.
+
+또한 위와 같은 방식으로 파일이 생성됩니다.
+
+위의 build.gradle을 이용해 build시
+
 파일 생성 위치는 해당 ```Workspace/build/libs/```
 
 저 같은 경우는 서버에 바로 jenkins 설치후 build를 했기 때문에
@@ -153,13 +161,9 @@ jar Task 실행 "springproject2-0.0.1-SNAPSHOT.jar"가 생성됩니다.
 
 위와 같이 생성되었습니다.
 
-#### War 파일이름
+지금까지 설명에 대한 기술문서 입니다. 
 
-war도 마찬가지로 plugin 'war'추가시 bootWar Task가 자동 실행되며, 
-
-war{ enabled = true }시 war Task가 진행됩니다.
-
-또한 위와 같은 방식으로 파일이 생성됩니다.
+( 개발의 기초는 기술문서를 읽는 것 입니다. )
 
 <div>
 	<img class="img-fluid" src="/img/posts/jenkins/jenkins28.JPG">	
