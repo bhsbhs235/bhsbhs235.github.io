@@ -1,12 +1,23 @@
 ---
 layout: post
-title: "Jenkins,Springboot 배포(with Gradle)"
+title: "Jenkins,Springboot 배포1(with Gradle)"
 subtitle: "Jenkins,Springboot deploy(with Gradle)"
 date: 2020-01-05
 background: '/img/posts/bg-img/28.jpg'
 comments: true
 categories: Jenkins Springboot
 ---
+
+<h1 class="section-heading2">들어가기 전에</h1>
+
+혹시 GitHub를 연동해서 쓰실분은 [Jenkins Github연동](https://bhsbhs235.github.io/jenkins/2019/12/25/jenkinsgithubIntegration.html)글을 참고해 주세요.
+
+해당 프로젝트에 따라 설정(예: build.gradle) 내용이 다르기 때문에 최대한 한 줄 한 줄 **의미**를 생각하면서 따라오시면 커스터마이징 하기에 도움이 되실 것으로 예상이 됩니다.
+
+감사합니다.
+
+<h1 class="section-heading2">본문</h1>
+
 #### Jenkins 프로젝트 구성
 Jenkins 해당 프로젝트 > 구성 > Build > Use Gradle Wrapper 체크 > Make gradlew executable 체크 >
 Wrapper location에 ${workspace} > Tasks에 claen build
@@ -172,3 +183,15 @@ dependencies {
 를 추가해줍니다.
 
 톰캣 필요없이 ```java -jar 파일명.war``` 명령으로 실행합니다. 
+
+서버에서 수동으로 실행해줘도 되고,
+
+jenkins를 이용해 build후 자동실행시켜주려면
+
+프로젝트 구성 Build탭에 Execute Shell을 추가한 후
+
+```Console
+java -jar 파일명.war
+```
+
+입력후 저장하면 됩니다.
