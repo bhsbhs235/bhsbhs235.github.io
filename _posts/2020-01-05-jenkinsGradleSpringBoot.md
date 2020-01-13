@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jenkins,Springboot 배포1(with Gradle)"
+title: "Jenkins,Springboot 배포(with Gradle)"
 subtitle: "Jenkins,Springboot deploy(with Gradle)"
 date: 2020-01-05
 background: '/img/posts/bg-img/28.jpg'
@@ -12,9 +12,9 @@ categories: Jenkins Springboot
 
 혹시 GitHub를 연동해서 쓰실분은 [Jenkins Github연동](https://bhsbhs235.github.io/jenkins/2019/12/25/jenkinsgithubIntegration.html)글을 참고해 주세요.
 
-해당 프로젝트에 따라 설정(예: build.gradle) 내용이 다르기 때문에 최대한 한 줄 한 줄 **의미**를 생각하면서 따라오시면 커스터마이징 하기에 도움이 되실 것으로 예상이 됩니다.
+해당 프로젝트에 따라 설정(예: build.gradle) 내용이 다르기 때문에 최대한 한 줄 한 줄 **의미**를 생각하면서 따라오시면 커스터마이징 하기에 도움이 되실 것으로 예상이 되며,
 
-감사합니다.
+Gradle 빌드에 대한 기초적인 내용(파일 구성,각 파일 기능)은 이해가 있으시다는 가정하에 글을 쓰게 되었습니다. 
 
 <h1 class="section-heading2">본문</h1>
 

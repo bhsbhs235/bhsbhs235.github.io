@@ -7,6 +7,9 @@ background: '/img/posts/bg-img/16.jpg'
 comments: true
 categories: Jenkins
 ---
+<h1 class="section-heading2" >들어가기 전에</h1>
+
+기본적인 Git 개념(commit, push)을 아신다고 생각하고 이 글을 썼습니다.
 
 <h1 class="section-heading2" >AWS EC2 Jenkins서버 Github연동</h1>
 
