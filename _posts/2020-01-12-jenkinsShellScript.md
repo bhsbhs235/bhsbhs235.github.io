@@ -130,4 +130,8 @@ jenkins		ALL=(ALL)		NOPASSWD=(ALL)
 
 git 툴과 연동작업이 되어있다면 git push 만으로 알아서 build하고 배포까지 정상작동 할 것입니다.
 
+**출처 :**
+
+[https://heowc.tistory.com/75](https://heowc.tistory.com/75)
+
 
