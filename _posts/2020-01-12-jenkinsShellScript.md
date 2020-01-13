@@ -24,7 +24,7 @@ build시 Springboot 프로젝트를 war로 배포하도록 설정하였습니다
 Jenkins 프로젝트 > 구성 build 탭
 
 <div>
-	<img class="img-fluid" src="/img/posts/jenkins/jenkins29.jpg">	
+	<img class="img-fluid" src="/img/posts/jenkins/jenkins29.JPG">	
 </div>
 
 Invoke Gradle script > Use Gradle Wrapper (프로젝트 내의 gradle사용) > Make gradlew executable 체크 > Wrapper location 에 %{workspace} > Tasks 에 clean build
