@@ -10,9 +10,11 @@ categories: Jenkins Springboot
 
 <h1 class="section-heading2">들어가기 전에</h1>
 
-build 툴은 Gradle을 사용하였으며 기본적으로 build가 무슨 뜻인지 따로 설명하지는 않겠습니다
+build 툴은 Gradle을 사용하였으며 기본적으로 build가 무슨 뜻인지 따로 설명하지는 않겠습니다.
 
-build시 Springboot 프로젝트를 war로 배포하도록 설정하였습니다. 
+build시 Springboot 프로젝트를 war로 배포하도록 설정하였습니다. 다음 글을 참고해주세요. [Jenkins,Springboot 배포(with Gradle)](https://bhsbhs235.github.io/jenkins/springboot/2020/01/05/jenkinsGradleSpringBoot.html)
+
+한 줄 한 줄 **의미**를 생각하면서 글을 읽어야 프로젝트 환경에 따라 커스터마이징 할 수 있습니다.
 
 감사합니다.
 
@@ -27,7 +29,7 @@ Jenkins 프로젝트 > 구성 build 탭
 	<img class="img-fluid" src="/img/posts/jenkins/jenkins29.JPG">	
 </div>
 
-Invoke Gradle script > Use Gradle Wrapper (프로젝트 내의 gradle사용) > Make gradlew executable 체크 > Wrapper location 에 %{workspace} > Tasks 에 clean build
+Invoke Gradle script > Use Gradle Wrapper (프로젝트 내의 gradle사용) > Make gradlew executable 체크 > Wrapper location 에 ${workspace} > Tasks 에 clean build
 
 gradle build Task로 war 생성 후 bash로 shell script를 실행해줍니다.
 
@@ -35,11 +37,11 @@ gradle build Task로 war 생성 후 bash로 shell script를 실행해줍니다.
 bash ${WORKSPACE}/deploy.sh 8080 ${JOB_NAME}
 ```
 
-(위의 ${WORKSPACE},${JOB_NAME}은 jenkins에서 지원하는 내부 변수입니다.)
+> **Note :** 위의 ${WORKSPACE},${JOB_NAME}은 jenkins에서 지원하는 내부 변수입니다.
 
 WORKSPACE 변수를 사용해서 해당 workspace안에 있는 deploy.sh 실행
 
-(WORKSPACE경로 - /var/lib/jenkins/workspace/프로젝트이름)
+> **Note :** WORKSPACE경로 - /var/lib/jenkins/workspace/프로젝트이름
 
 실행할 포트 번호 8080과 프로젝트 이름을 변수로 던져줍니다.
 
