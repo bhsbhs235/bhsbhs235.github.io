@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Jenkins,Springboot 배포(with Gradle)"
-subtitle: "Jenkins,Springboot deploy(with Gradle)"
+title: "Gradle로 War파일 배포"
+subtitle: "War file distribution with Gradle"
 date: 2020-01-05
 background: '/img/posts/bg-img/28.jpg'
 comments: true

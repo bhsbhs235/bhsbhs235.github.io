@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Shell script로 war자동배포(with Gradle)"
-subtitle: "Automatic deployment of war to shell scripts(with Gradle)"
+title: "Shellscript로 War자동배포/실행(Gradle)"
+subtitle: "Auto Deploy/Run War with Shellscript(Gradle)"
 date: 2020-01-12
-background: '/img/posts/bg-img/29.jpg'
+background: '/img/posts/bg-img/30.jpg'
 comments: true
 categories: Jenkins Springboot 
 ---
@@ -12,7 +12,7 @@ categories: Jenkins Springboot
 
 build 툴은 Gradle을 사용하였으며 기본적으로 build가 무슨 뜻인지 따로 설명하지는 않겠습니다.
 
-build시 Springboot 프로젝트를 war로 배포하도록 설정하였습니다. 다음 글을 참고해주세요. [Jenkins,Springboot 배포(with Gradle)](https://bhsbhs235.github.io/jenkins/springboot/2020/01/05/jenkinsGradleSpringBoot.html)
+build시 Springboot 프로젝트를 war로 배포하도록 설정하였습니다. 다음 글을 참고해주세요. [Gradle로 War파일 배포](https://bhsbhs235.github.io/jenkins/springboot/2020/01/05/jenkinsGradleSpringBoot.html)
 
 한 줄 한 줄 **의미**를 생각하면서 글을 읽어야 프로젝트 환경에 따라 커스터마이징 할 수 있습니다.
 
@@ -32,6 +32,8 @@ Jenkins 프로젝트 > 구성 build 탭
 Invoke Gradle script > Use Gradle Wrapper (프로젝트 내의 gradle사용) > Make gradlew executable 체크 > Wrapper location 에 ${workspace} > Tasks 에 clean build
 
 gradle build Task로 war 생성 후 bash로 shell script를 실행해줍니다.
+
+Add build step에서 Execute shell을 추가 후 아래 명령어를 입력해줍니다.
 
 ```Console
 bash ${WORKSPACE}/deploy.sh 8080 ${JOB_NAME}
