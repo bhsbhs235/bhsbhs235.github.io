@@ -5,7 +5,7 @@ subtitle: "Run springboot with Docker(Gradle)"
 date: 2020-01-19
 background: '/img/posts/bg-img/29.jpg'
 comments: true
-categories: Jenkins Springboot
+categories: Jenkins Springboot Docker
 ---
 
 <h1 class="section-heading2">들어가기 전에</h1>
@@ -79,9 +79,12 @@ FROM - 생성할 이미지의 기반을 설정합니다.(이 설정을 왜 하�
 
 ARG - 변수값을 지정해주는 설정으로 위의 springproject-0.0.1-SNAPSHOT.war은 아무의미가 없는 Default Value값으로 그냥 정보만 적어둔 것입니다.
 
-위에 이미지를 생성해주는 명령어에서 ```--build-arg WAR_FILE=build/libs/springproject-0.0.1-SNAPSHOT.war```로 변수값으을 전달하면 ARG WAR_FILE에서 값을 받아 적용되는 것입니다.
+위에 이미지를 생성해주는 명령어에서 ```--build-arg WAR_FILE=build/libs/springproject-0.0.1-SNAPSHOT.war```로 변수값을 전달하면 ARG WAR_FILE에서 값을 받아 적용되는 것입니다.
 
 즉, DockerFile에서 ```ARG WAR_FILE``` 로 변수만 만들어주면 오류는 없습니다. 하지만 값을 받을 변수가 없으면 오류가 납니다.
+
+> **Tip :** ARG를 사용하는 큰 이유 중 하나는 build시 --build-arg로 정보를 전달해 주고 history 정보만 지워주면 흔적이 남지 않기 때문입니다.
+예들들어, HTTP_PROXY,FTP_PROXY 등 중요한 정보가 밖으로 유출되면 안 되기 때문에 흔적을 지워줘야 합니다.
 
 COPY - 호스트의 파일을 컨테이너로 복사하는 설정입니다. WAR_FILE 변수값을 이용해 "springproject.war" 이름으로 Copy합니다.
 
