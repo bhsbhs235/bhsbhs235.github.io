@@ -59,11 +59,14 @@ Git체크 > Repository URL : https://github.com/bhsbhs235/springproject.git > Cr
 
 프로젝트 내의 gradle wrapper를 사용할 것이므로, User Gradle Wrapper 체크
 
-Wrapper location : ${workspace} ( jenkins 내부 변수로 해당 workspace 경로를 나타냄 )
+Wrapper location : ${workspace} 
 
-Tasks : clean build ( clean는 build디렉토리를 삭제하는 Task명령어 build는 말그대로 build하는 Task 명령어)
+Tasks : clean build
 
 Execute shell 추가 후 Command에 bash ${WORKSPACE}/deploy.sh 로 빌드 후 실행 할 명령어를 쉘스크립트로 구동
+
+> **Tip :** ${workspace} : jenkins 내부 변수로 해당 workspace 경로를 나타냄 <br>
+            Tasks : clean는 build디렉토리를 삭제하는 Task명령어 build는 말그대로 build하는 Task 명령어
 
 <div>
 	<img class="img-fluid" src="/img/posts/docker/docker4.jpg">	
@@ -181,7 +184,7 @@ upstream springproject{
 
 그래서 **마치 localhost에서 Nginx를 구동하는 것과 같이 host서버 네트워크로 연결합니다.**
 
-( 이해가 안되신다면 'Docker 네트워크'에 대해 알아보시기 부탁드립니다.)
+> **Note :** 이해가 안되신다면 'Docker 네트워크'에 대해 알아보시기 부탁드립니다.
 
 **docker-compose.nginx.yml :**
 
@@ -202,7 +205,9 @@ services:
 
 `build`는 docker build 명령어 (이미지 생성)에 관한 설정으로 context는 Dockerfile이 위치하는 경로를 지정하며, build할 dockerfile 이름은 'Dockerfile_nginx'로 설정해주었습니다.
 
-image 이름 (\--tag 옵션)은 `dockerhub계정이름/nginx:태그`로 설정해 주었습니다. ( dockerhub에 push하려면 계정이름을 붙혀서 만들어줘야 합니다.)
+image 이름 (\--tag 옵션)은 `dockerhub계정이름/nginx:태그`로 설정해 주었습니다. 
+
+> **Tip :** dockerhub에 push하려면 계정이름을 붙혀서 만들어줘야 합니다.
 
 `ports`는 docker run 명령어 (컨테이너 구동) -p 옵션과 같고, container_name 컨테이너이름 (\--name옵션)은 nginx_springproject로 설정해주었습니다. 
 
@@ -234,7 +239,7 @@ CMD ["nginx", "-g", "daemon off;"]
 
 `docker-compose -p nginx -f docker-compose.nginx.yml up -d`
 
-(만약 docker-compse 명령어를 인식하지 못하면 바이너리 파일을 경로를 직접 불러오면 됩니다.)
+> **Tip :** 만약 docker-compse 명령어를 인식하지 못하면 바이너리 파일을 경로를 직접 불러오면 됩니다.)
 
 -p 는 프로젝트 이름을 지정
 
@@ -349,6 +354,8 @@ if문 -z 옵션은 문자열의 길이가 0이면 `true` 입니다.
 <h1 class="section-heading2">Workflow</h1>
 
 현재 nginx 웹서버 실행 중입니다.
+ 
+(docker-compose -p nginx -f docker-compose.nginx.yml up -d)
 
 1. 코드 수정 후 github에 push한다.
 
@@ -363,6 +370,8 @@ if문 -z 옵션은 문자열의 길이가 0이면 `true` 입니다.
 1. 상황에 따라 blue, green 서버를 down 또는 up
 
 <h1 class="section-heading2">참고 문서</h1>
+
+[springproject github주소](https://github.com/bhsbhs235/springproject) - Github 주소
 
 [Compose file version 3 reference](https://docs.docker.com/compose/compose-file/) - docker-compose 명령어관련 공식문서
 
