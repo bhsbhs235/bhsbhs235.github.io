@@ -20,12 +20,18 @@ categories: Jenkins Springboot Docker
 
 <h1 class="section-heading2">본문</h1>
 
+| 도구/프레임워크 | 버전 |
+|---|:---:|
+| Spring boot | 2.1.10.RELEASE |
+| Spring dependency-management | 1.0.8.RELEASE |
+| Docker-community edition | 19.03.5 |
+| Docker-compose | 1.25.0 |
+
 #### 시스템 구성도
 
 <div>
 	<img class="img-fluid" src="/img/posts/docker/docker5.jpg">	
 </div>
-
 
 #### Jenkins 프로젝트 > 구성
 
@@ -371,7 +377,7 @@ if문 -z 옵션은 문자열의 길이가 0이면 `true` 입니다.
 
 <h1 class="section-heading2">참고 문서</h1>
 
-[springproject github주소](https://github.com/bhsbhs235/springproject) - Github 주소
+[springproject github주소](https://github.com/bhsbhs235/springproject) - 해당 프로젝트 Github 주소
 
 [Compose file version 3 reference](https://docs.docker.com/compose/compose-file/) - docker-compose 명령어관련 공식문서
 

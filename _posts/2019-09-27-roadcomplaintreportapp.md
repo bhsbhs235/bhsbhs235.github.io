@@ -28,6 +28,12 @@ categories: Projects
 
 <h3 class="section-heading2">시스템 구성</h3>
 
+| 개발환경 | 비고 |
+|---|:---:|
+| 설계/구현 도구 | AndroidStudio6.0, SQlite, Rasbian |
+| 사용 언어 | JAVA, Python |
+| 라이브러리,API | GoogleMap, GooglePlace, bluez, blescanner |
+
 <img class="img-fluid" src="/img/posts/projects/senierproject3.PNG">
 <div style="text-align: center;">
 <img class="img-fluid" src="/img/posts/projects/senierproject4.PNG" align="center">
