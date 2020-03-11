@@ -8,7 +8,7 @@ comments: true
 categories: Springboot
 ---
 
-<h1 class="section-heading2">서론</h1>
+<h1 class="section-heading2">들어가기 전에</h1>
 
 spring boot, spring security 프레임워크를 사용해서 jsp로 로그인, 회원가입, 토큰을 이용한 비밀번호 변경, 권한에 따른 메뉴 접근 권한을 구현해 보았습니다. 
 
@@ -422,7 +422,7 @@ invalidateHttpSession은 logout후 세션에 담겨있는 유저정보를 지우
 
 (자세한 내용 생략)
 
-jsp에서 spring security tag library를 사용해 해당 권한을 가지고 있는 유저만 보이게 할 수 있습니다.
+jsp에서 spring security tag library를 사용해 해당 권한을 가지고 있는 유저, 인증 완료된 유저만 보이게 할 수 있습니다.
 
 #### Service
 
@@ -640,7 +640,7 @@ Size.userForm.password=Try one with at least 8 characters.
 Diff.userForm.passwordConfirm= These passwords don\'t match.
 ```
 
-<h1 class="section-heading2">결문</h1>
+<h1 class="section-heading2">마무리하며</h1>
 
 지금까지 긴 글을 읽어주셔서 감사합니다. 나머지 더 세세한 내용은 양이 너무 많아 생략하게 되었습니다 모르시는 부분이 있으시면 댓글 또는 이메일로 연락주시면 바로 답변해드리겠습니다.
 
@@ -652,3 +652,4 @@ Diff.userForm.passwordConfirm= These passwords don\'t match.
 
 [spring security refernce](https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/) - Spring Security 공식문서
 
+[Giau Ngo's blog](https://hellokoding.com/registration-and-login-example-with-spring-security-spring-boot-spring-data-jpa-hsql-jsp/) - 참고 블로그
