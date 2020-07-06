@@ -15,8 +15,26 @@ background: '/img/bg-about2.jpg'
 저는 눈이 즐거운 것을 좋아합니다. 그래서 전시회나 사진전 가는 것을 즐겨 합니다. 위의 그림들은 대부분 제가 직접 찍은 사진을 업로드하고 있으니 같이 즐겨주시면 감사하겠습니다 일반 블로그처럼 일상생활에 관한 다양한 분야의 글도 올릴 예정이니 많이 방문해주셨으면 합니다
 
 감사합니다.
+
 <h2 class="section-heading2" >프로젝트 경험</h2>
 
 - [Sleeptime/pattern measurement(with.CCTV in house)](https://bhsbhs235.github.io/projects/2019/10/09/iot_cctv_sleeptech_pi.html) - 수면시간/패턴 측정
 
 - [Road Complaint Report App](https://bhsbhs235.github.io/projects/2019/09/27/roadcomplaintreportapp.html) - 도로 불편사항 신고 앱
+
+<h2 class="section-heading2" >자격증</h2>
+
+- RHCSA(Red Hat Certified System Administrator) 
+
+- SQLD
+
+- 정보처리기사
+
+- 리눅스 마스터 2급
+
+- AutoCAD 1급
+
+- AutoCAD 2급
+
+
+
